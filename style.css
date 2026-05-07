@@ -19,8 +19,11 @@ body {
     border: 1px solid #8B0000;
     border-radius: 50px;
     padding: 10px 30px !important;
-    display: inline-flex;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    max-width:90%;
+    margin-top: 20px auto 0 auto;
 }
 
 .navbar-nav .nav-link {
@@ -52,7 +55,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 8vw, 3.5rem);
     color: white;
 }
 
@@ -78,6 +81,10 @@ section {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    width: 95%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #8B0000;
     border-radius: 15px;
     padding: 30px;
@@ -129,7 +136,8 @@ footer p {
 
 .minusta-teksti {
     color: white;
-    max-width: 900px;
+    width: 95%;
+    max-width:900px;
     margin: 0 auto;
     line-height: 1.8;
     padding: 0 15px;
@@ -152,7 +160,8 @@ footer p {
     font-size: 1.4rem;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
-    max-width: 850px;
+    width: 95%;
+    max-width:850px;
     margin: 0 auto;
 }
 
